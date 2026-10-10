@@ -1,0 +1,47 @@
+name: バグ報告
+description: 不具合の内容と再現手順を報告します
+title: "[Bug] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 不具合の概要
+      description: 何が起きているかを簡潔に記載してください。
+      placeholder: 例：保存ボタンを押すとエラーが表示され、変更が保存されない
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 不具合を再現するための操作を順番に記載してください。
+      placeholder: |
+        1. 対象画面を開く
+        2. 入力を変更する
+        3. 保存ボタンを押す
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      description: 再現した結果を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      description: 本来どう動くべきかを記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 発生環境
+      description: バージョン、OS、ブラウザなど、関連する環境情報を記載してください。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: ログ・スクリーンショット
+      description: 関連するログや画像があれば添付してください。公開できない情報は除いてください。

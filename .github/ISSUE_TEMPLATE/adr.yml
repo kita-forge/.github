@@ -1,0 +1,49 @@
+name: ADR（設計判断）
+description: 技術・設計上の決定とその理由を記録します
+title: "[ADR] "
+body:
+  - type: dropdown
+    id: status
+    attributes:
+      label: 状態
+      description: 現在の決定状況を選択してください。変更があれば Issue 本文を更新してください。
+      options:
+        - 提案中
+        - 承認済み
+        - 却下
+        - 廃止
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景と課題
+      description: 判断が必要になった理由と制約を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: 決定案・決定内容
+      description: 提案中の場合は決定案、承認済みの場合は確定した内容を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 検討した代替案
+      description: 主な選択肢と採用・不採用の理由を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: 影響とトレードオフ
+      description: 利点、欠点、移行や運用への影響を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 関連情報
+      description: 関連 Issue、PR、設計資料、置き換える ADR などがあれば記載してください。

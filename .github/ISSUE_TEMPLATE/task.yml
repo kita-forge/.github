@@ -1,0 +1,26 @@
+name: 開発タスク
+description: 実装や運用の作業を整理します
+title: "[Task] "
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: 作業内容と目的を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件
+      description: 完了を判断できる条件を記載してください。
+      placeholder: |
+        - [ ] 条件1
+        - [ ] 条件2
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足
+      description: 関連 Issue、参考資料、注意点などがあれば記載してください。
